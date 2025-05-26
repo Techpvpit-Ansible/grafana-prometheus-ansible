@@ -1,0 +1,7 @@
+- name: Развёртывание Prometheus + Grafana
+  hosts: all
+  become: true
+  vars:
+    monitoring_stack_dir: /srv/monitoring  # можно переопределять
+  roles:
+    - monitoring_stack

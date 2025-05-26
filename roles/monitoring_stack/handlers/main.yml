@@ -1,0 +1,5 @@
+---
+- name: restart monitoring stack
+  shell: "{{ docker_compose_cmd }} restart"
+  args:
+    chdir: "{{ monitoring_stack_dir }}"
